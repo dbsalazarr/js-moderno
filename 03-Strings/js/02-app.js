@@ -13,3 +13,5 @@ console.log(producto.indexOf('Tablet')); // -1 Significa que no lo pudo encontra
 console.log(producto.includes('Monitor')); // Conocer si un texto existe
 console.log(producto.includes('monitor')); // Conocer si un texto existe
 console.log("Saber y luchar es deber estudiantil".indexOf("S"))
+
+console.log(`El producto {producto} tiene un precio: {precio}`)
