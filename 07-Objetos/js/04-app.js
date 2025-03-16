@@ -20,3 +20,5 @@ console.log(producto); // Puedes ver que tenemos un objeto dentro de un objeto.
 console.log(producto.informacion);
 console.log(producto.informacion.peso);
 console.log(producto.informacion.medida);
+
+console.log(producto['informacion']['peso'])
