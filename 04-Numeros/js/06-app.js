@@ -17,5 +17,8 @@ console.log(Number.parseInt(numero3));
 console.log(Number.isInteger(numero4) ); // Revisar si un número es entero o no
 console.log(Number.isInteger(numero3) ); //
 
+// Verifica si se tiene un Non a Number (NaN)
+console.log(Number.isNaN(Number.parseInt(numero3)))
+
 // Convertir String a numero
 console.log(numero4.toString());

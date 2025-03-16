@@ -1,15 +1,15 @@
 // Null y Undefined
 
-// En javascript existen diferentes tipos de datos primitivos a los que hemos visto, además de string y number se tienen booleans que son true o false,  y existen un par más llamados undefined y null
+// En javascript existen diferentes tipos de datos primitivos a los que hemos visto, además de string y number se tienen booleans que son true o false y existen un par más llamados undefined y null
 
 
-// veamos un ejemplo de undefined.
+// Veamos un ejemplo de undefined.
 let numero;
 
 console.log(numero); // La variable esta definida pero su valor no, por lo tanto es undefined...
 console.log(typeof numero)
 
-// En el caso de null es más bien asignarlo
+// null: Este tipo de dato tienen que ser asignado
 
 let numero2 = null;
 console.log(numero2);

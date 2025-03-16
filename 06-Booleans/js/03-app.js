@@ -11,4 +11,4 @@ if(boolean1) {
 }
 
 //El código anterior es fácil de leer no?, pero se puede simplificar un poco más
-console.log( boolean1  ? 'Si es true' : 'No no es true' )
+console.log( boolean1  ? 'Acceso Concedido' : 'Inicia Sesión' )

@@ -17,15 +17,17 @@ const producto = {
 
 // Destructuring significa, sacar de una esctructura, puede ser complejo, no lo es tanto sobretodo cuando lo practicas
 
-const { nombre } = producto;
+// const { nombre } = producto;
 
 
-// si deseas extraer más variables;
-const { precio } = producto;
+// // si deseas extraer más variables;
+// const { precio } = producto;
 
-console.log(nombre)
-console.log(precio)
+// console.log(nombre)
+// console.log(precio)
 
 // O puedes hacerlo mejor con 
 
 const {nombre, precio} = producto;
+console.log(nombre)
+console.log(precio)
