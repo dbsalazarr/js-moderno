@@ -10,14 +10,14 @@ const producto = {
 
 Object.seal(producto);
 
-// Se pueden reasignar
+// * Se pueden modificar
 producto.nombre = 'Tablet';
 
-// Pero no eliminar
+// ! Pero no eliminar
 // delete producto.precio;
 
 
-// Tampoco se pueden añadir nuevas
+// !Tampoco se pueden añadir nuevas
 // producto.imagen = "imagen.jpg";
 
 // Verificar si un objeto esta sellado

@@ -1,7 +1,7 @@
 // Veamos algunas operaciones útiles en los arreglos,
 
 
-const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
+const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre'];
 
 // Si quieres saber cuantos elementos hay un arreglo puedes utilizar la propiedad
 console.log(meses.length);
@@ -11,3 +11,16 @@ console.log(meses.length);
 for (let i = 0; i < meses.length; i++) {
     console.log(meses[i]);
 }
+let i = 0;
+while (i < meses.length){
+    console.log(meses[i])
+    i++
+}
+
+console.log("Do While")
+let j = 0
+do{
+    console.log(meses[j])
+    j = j + 1
+}
+while(j < meses.length)

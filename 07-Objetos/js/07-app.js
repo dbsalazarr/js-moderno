@@ -20,17 +20,17 @@ console.log(producto);
 Object.freeze( producto ); // Freeze toma como argumento el objeto
 
 // producto.disponible = false;
+producto.precio = 1200
 
 
-
-// Freeze tampoco permite agregar nuevas propiedaes
+// * Freeze tampoco permite agregar nuevas propiedaes
 // producto.imagen = "imagen.jpg";
 
-// Tampoco se pueden eliminar propiedades
+// * Tampoco se pueden eliminar propiedades
 
 // delete producto.nombre;
 
-// Finalmente si quieres revisar si un objeto esta congelado puedes usar
+// * Finalmente si quieres revisar si un objeto esta congelado puedes usar
 
 console.log( Object.isFrozen(producto) );
 

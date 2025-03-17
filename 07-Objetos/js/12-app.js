@@ -9,8 +9,21 @@ const producto = {
     precio: 30,
     disponible: true,
     mostrarInfo: function() {
-        return `El Producto: ${this.nombre}  tiene un precio de ${this.precio}`;
+        console.log(`El Producto: ${this.nombre}  tiene un precio de ${this.precio}`)
     }
 }
+
+
+function Producto(nombre, precio){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.disponible = true;
+}
+
+const producto2 = new Producto("Laptop", 7500)
+console.log(producto2)
+
+const producto3 = new Producto("Server", 4000)
+console.log(producto3)
 
 console.log(producto.mostrarInfo() );

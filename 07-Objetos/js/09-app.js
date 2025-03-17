@@ -16,6 +16,10 @@ const medidas = {
 
 const resultado = Object.assign(producto, medidas);
 
-// Otra forma de hacerlo que se considera más moderna es con El Spread Operator o Rest Operator, veamoslo en el siguiente video
-
 console.log(resultado);
+
+// Otra forma de hacerlo que se considera más moderna es con El Spread Operator o Rest Operator
+
+const resultado1 = {...producto, ...medidas}
+console.log(resultado1)
+

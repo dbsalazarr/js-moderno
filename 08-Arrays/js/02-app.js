@@ -13,3 +13,8 @@ console.log(numeros[0])
 console.log(numeros[1])
 console.log(numeros[3])
 console.log(numeros[20])
+
+console.log("Foreach")
+numeros.forEach((num) => {
+    console.log(num)
+})
