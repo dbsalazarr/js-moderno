@@ -8,15 +8,20 @@ const carrito = [
 ]
 
 // Muy similar al forEach existe un array metod llamado map, la diferencia es que map te crea un array nuevo...
+const nombreProducto = carrito.map( producto => producto.nombre)
 
 
-const nuevoArray = carrito.map( function(producto) {
-   return  `Articulo: ${ producto.nombre } Precio: $ producto.precio} `;
+const nuevoArray = carrito.map( producto => producto.precio)
+
+
+// Multiplicar el precio de los productos por 2
+const precioDuplicado = carrito.map( (producto) => {
+    return producto.precio * 2
 })
 
-const nuevoArray2 = carrito.forEach( function(producto) {
-    return  `Articulo: ${ producto.nombre } Precio: $ producto.precio} `;
- })
-
+console.log("Nombre Productos")
+console.log(nombreProducto)
+console.log("Precio elementos")
 console.log(nuevoArray);
-console.log(nuevoArray2);
+console.log("Precio duplicado")
+console.log(precioDuplicado)

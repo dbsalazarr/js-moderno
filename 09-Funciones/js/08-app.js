@@ -12,7 +12,7 @@ console.log(resultado);
 
 
 // Ejemplo más avanzado....
-let total = 0;
+let total = 0; // variable global
 function agregarCarrito(precio) {
     return total += precio;
 }
