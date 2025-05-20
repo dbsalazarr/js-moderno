@@ -15,4 +15,6 @@ if(efectivo > totalCarrito || credito > totalCarrito ) {
     console.log('No puedes pagar');
 }
 
+// && Condicional and
+// || Condicional or
 // Puedes ver que se cumple una u otra condición, y con eso basta para que el código de la primera condición se cumpla...

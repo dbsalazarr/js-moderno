@@ -19,7 +19,9 @@ if (usuario && puedePagar) {
 }
 
 // Cambiar true o false...
-
+/**
+ * 
+ */
 
 
 // Ahora si quieres darle mensajes de error más detallados a tus usuarios puedes revisar o negar una condición

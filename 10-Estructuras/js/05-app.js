@@ -1,6 +1,6 @@
 // Cuando tienes múltiples condiciones por revisar, una forma fácil de leerlo es con un switch...
 
-const metodoPago = 'efectivo';
+const metodoPago = 'other';
 
 switch(metodoPago) {
     case 'efectivo':
@@ -11,6 +11,9 @@ switch(metodoPago) {
         break;
     case 'tarjeta':
         console.log(`Pagaste con ${metodoPago} espere un momento...`);
+        break;
+    case 'afectivo' :
+        console.log(`Por el momento no se cuenta con este método de pago`)
         break;
     default:
         console.log('Aún no has pagado');
