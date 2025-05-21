@@ -38,7 +38,7 @@ const carrito = [
 ]
 
 for(let i = 0; i < carrito.length; i++ ) {
-    console.log(carrito[i].nombre);
+    console.log(carrito[i].nombre, carrito[i].precio);
 }
 
 // en este caso nuestro for loop corre hasta que una condición se cumple, ahora como este arreglo el usuario se va a encargar de llenarlo, que el carrito tenga elementos, un for loop ejecutará el código hasta que lleguemos al final del carrito...
