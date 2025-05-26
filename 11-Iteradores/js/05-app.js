@@ -6,9 +6,17 @@
 let i = 0; // probar con 1000
 
 do {
-    console.log(`Numero: ${i}`)
-    i++;
-} while( i < 10 );
+    if(i % 15 == 0){
+        console.log("Fizz and Buzz")
+    }else if(i % 5 == 0){
+        console.log("Buzz")
+    }else if(i % 3== 0){
+        console.log("Fizz")
+    }else{
+        console.log(i)
+    }
+    i++
+} while( i <= 20 );
 
 
 // Ahora, lo que hace diferente a un while de un for o un do while, es que al menos se va a ejecutar una vez aunque la condición no se cumpla...
