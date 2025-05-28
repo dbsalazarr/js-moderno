@@ -12,16 +12,37 @@ for (let producto of carrito) {
     console.log(producto.producto);
 }
 
-
+console.log("// ======== Iterar Objetos ======== //")
 
 let automovil = {
     modelo: 'Camaro',
-    motor: '6.0',
-    anio: '1969',
+    motor: '4.8',
+    anio: '1900',
     marca: 'Chevrolet'
 }
+
+// Iterando el objeto automovil
+for(let keys in automovil){
+    console.log(`${keys} : ${automovil[keys]}`)
+}
+
+
+
+console.log("Others probe")
+
+
+
+
+
+
 for(let auto in automovil) {
     console.log(`${auto} : ${automovil[auto]}`);
+}
+
+console.log("// ======== Iterar Object.entries ======== //")
+
+for(let [llave, valor] of Object.entries(automovil)){
+    console.log(automovil[llave])
 }
 
 

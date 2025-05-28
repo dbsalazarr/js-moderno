@@ -9,5 +9,4 @@ for (let i = 0; i <= 50; i++) {
     }else{
         console.log(i)
     }
-    
 }
