@@ -31,7 +31,9 @@ console.log(resultado);
 
 
 // En el caso de un arreglo de objetos... .includes no es la mejor opción, podrías utilizar uno llamado .some
-const existe = carrito.some( producto => producto.nombre === 'Celular' );
+
+// * solo retorna: true or false
+const existe = carrito.some( producto => producto.precio > 50 );
 console.log(existe);
 
 // Some en un arreglo tradicional...

@@ -1,6 +1,6 @@
 // El Segundo Array Method que quiero mostrarte es findIndex...
 
-const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'];
+const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Abril'];
 
 const carrito = [
     { producto: 'Monitor 20 Pulgadas', precio: 500},
@@ -26,3 +26,20 @@ meses.forEach( (mes, index) => {
 // FindIndex te dirá el indice es decir la ubicación del elemento en el arreglo...
 const indice = meses.findIndex( mes => mes === 'Abril' ); // Cambiar a Diciembre, Tendremos -1 eso quiere decir que no lo encontró
 console.log(indice);
+
+
+// 
+let resultado = meses.some( mes => {
+    return mes === "Enero"
+})
+console.log(resultado)
+
+existeCarrito = meses.includes("")
+console.log(existeCarrito)
+
+
+const indice1 = meses.findIndex( mes => {
+    return mes === "Agosto"
+})
+
+console.log(indice1)
