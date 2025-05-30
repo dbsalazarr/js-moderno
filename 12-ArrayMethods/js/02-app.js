@@ -3,6 +3,7 @@
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Abril'];
 
 const carrito = [
+    { producto: 'Laptop', precio: 800},
     { producto: 'Monitor 20 Pulgadas', precio: 500},
     { producto: 'Televisión 50 Pulgadas', precio: 700},
     { producto: 'Tablet', precio: 300},
@@ -10,7 +11,6 @@ const carrito = [
     { producto: 'Teclado', precio: 50},
     { producto: 'Celular', precio: 500},
     { producto: 'Bocinas', precio: 300},
-    { producto: 'Laptop', precio: 800},
 ];
 
 // Primero veamos como seria el ejemplo con un forEach...
@@ -43,3 +43,9 @@ const indice1 = meses.findIndex( mes => {
 })
 
 console.log(indice1)
+
+
+indiceCarrito = carrito.findIndex( item => {
+	return item.producto == "Laptop"
+})
+console.log(indiceCarrito)
