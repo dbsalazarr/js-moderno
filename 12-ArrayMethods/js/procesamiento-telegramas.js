@@ -1,4 +1,4 @@
-telegrama = " Llego mañana alrededor del mediodía. Voy a almorzar "
+telegrama = " Llego. mañana alrededor del mediodía. Voy a almorzar."
 telegrama = telegrama.trim()
 
 console.log(telegrama)
@@ -8,19 +8,38 @@ palabras = telegrama.split(" ");
 palabrasCortas = 0
 palabrasLargas = 0
 
-telegramaModificado = palabras.map( word => {
-    
-    if (word.length > 5){
-        palabrasLargas++
-        if (word.includes(".")){
+telegramaModificado = palabras.map( (word, posicion) => {
+
+    if(posicion == palabras.length - 1){
+        if(word.includes(".")){
+            if (word.length > 6){
+                palabrasLargas++
+                return word.slice(0,5) + "@ STOP STOP"
+            }else{
+                palabrasCortas++
+                return word.replace(".", "STOP STOP")
+            }
+        }
+    }else if(word.includes(".")){
+
+        if (word.length > 6){
+            palabrasLargas++
             return word.slice(0,5) + "@ STOP"
         }else{
-            return word.slice(0, 5) + "@"
+            palabrasCortas++
+            return word.replace(".", "STOP")
         }
+
     }else{
-        palabrasCortas++
-        return word
+        if(word.length > 5){
+            palabrasLargas++
+            return word.slice(0, 5) + "@"
+        }else{
+            palabrasCortas++
+            return word
+        }
     }
+
 })
 console.log(telegramaModificado)
 
@@ -33,8 +52,6 @@ console.log(mensajeModificado.trim())
 
 console.log("Palabras Cortas ",palabrasCortas)
 console.log("Palabras Largas ", palabrasLargas)
-
-
 
 
 // T: 2
