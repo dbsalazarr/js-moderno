@@ -1,4 +1,4 @@
-telegrama = " Llego. mañana alrededor del mediodía. Voy a almorzar. milaneza"
+telegrama = " Llego. mañana alrededor del mediodía. Voy a almorzar. milaneza. hla"
 telegrama = telegrama.trim()
 
 console.log(telegrama)
@@ -17,7 +17,7 @@ telegramaModificado = palabras.map( (word, posicion) => {
                 return word.slice(0,5) + "@ STOP STOP"
             }else{
                 palabrasCortas++
-                return word.replace(".", "STOP STOP")
+                return word.replace(".", " STOP STOP")
             }
         }else{
             if (word.length > 5){
@@ -25,7 +25,7 @@ telegramaModificado = palabras.map( (word, posicion) => {
                 return word.slice(0,5) + "@ STOP STOP"
             }else{
                 palabrasCortas++
-                return word.replace(".", "STOP STOP")
+                return word + " STOP STOP"
             }
         }
     }else if(word.includes(".")){

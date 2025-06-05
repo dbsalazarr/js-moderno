@@ -31,3 +31,8 @@ console.log(total);
                             // total, actual
 let resultado = carrito.reduce((total, producto) => total + producto.precio, 0); //0 es el inicio
 console.log( resultado );
+
+let nombres = carrito.reduce( (idNombre, item) => {
+	return	idNombre + item.producto
+}, "")
+console.log(nombres);
