@@ -18,9 +18,16 @@ let resultado = carrito.filter( producto => producto.precio > 400 ); // Todos lo
 let resultado2 = carrito.filter( producto => producto.nombre === 'Celular'  ); // Traerte el celular
 let resultado3 = carrito.filter(producto => producto.nombre !== 'Laptop'); // Todos menos la laptop
 
+// Quitar varios elementos de una lista
+productosEliminar = ["Bocinas", "Celular", "Televisión 50 Pulgadas"];
 
-console.log(resultado);
-console.log(resultado2);
-console.log(resultado3);
+resultado = carrito.filter( (item, posicion) => {
+    return  item.nombre !== "Laptop"
+})
+
+// console.log(resultado);
+// console.log(resultado2);
+// console.log(resultado3);
+console.table(resultado)
 
 // Filter es en mi opinión el más util y el más utilizado!
