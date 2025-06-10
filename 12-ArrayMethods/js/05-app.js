@@ -26,5 +26,14 @@ console.log(resultado);
 
 // con .find seria
 
-const resultado2 = carrito.find( producto => producto.nombre === 'Bocinas');
+const resultado2 = carrito.find( producto => {
+    return producto.nombre === 'Bocinas'
+});
 console.log(resultado2);
+
+
+resultado = carrito.find( item => {
+    return item.nombre == "Laptop"
+})
+
+console.log(resultado);
