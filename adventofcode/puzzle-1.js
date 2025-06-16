@@ -6,14 +6,37 @@ let subir, bajar
 subir = 0
 bajar = 0
 
+// Primera parte
+
 for( let i = 0; i < instrucciones.length; i++){
     if ( instrucciones[i] == "("){
         subir++
     }else{
-        bajar++
+        bajar--
     }
 }
 
+console.log(subir);
+console.log(bajar)
+
+console.log(subir + bajar)
+// Segunda parte
+let posicion
+let totalParcial = 0
+for( let i = 0; i < instrucciones.length; i++){
+    if ( instrucciones[i] == "("){
+        totalParcial++
+    }else{
+        totalParcial--
+    }
+
+    if (totalParcial == -1){
+        posicion = i + 1
+        break
+    }
+}
+
+console.log("Posición del personaje: ", posicion);
 // instrucciones.forEach( word => {
 //     if ( word == "("){
 //         subir++
