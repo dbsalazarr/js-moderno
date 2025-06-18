@@ -22,7 +22,6 @@ console.log(meses);
 console.log(meses2); // Recuerda esto no modifica el arreglo original como si haria push y eso es muy útil en un tipo de programación llamada funcional...
 
 
-
 // O al inicio... en lugar de utilizar unshift, 
 const meses3 = ['Julio',...meses ]; 
 
@@ -30,6 +29,7 @@ const meses3 = ['Julio',...meses ];
 // O tal vez quieres añadir un objeto a un arreglo de objetos al final
 const producto = {producto: 'Disco Duro', precio: 300};
 const carrito2 = [...carrito, producto];
+
 console.log(carrito2);
 
 

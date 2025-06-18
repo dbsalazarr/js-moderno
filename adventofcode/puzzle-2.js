@@ -1012,8 +1012,8 @@ let medidas = dimensiones.map( item => {
 function totalPapelRegalo(listaMedidas){
     let total = 0
     listaMedidas.forEach( medida => {
-        total += calcularSuperficie(medida[0], medida[1], medida[2])
-        total += menorArea(medida[0], medida[1], medida[2])
+        total += calcularSuperficie(...medida)
+        total += menorArea(...medida)
     })
     return total
 }
@@ -1030,7 +1030,6 @@ function calcularSuperficie(longitud, ancho, altura){
 function menorArea(longitud, ancho, altura){
     let base, frontal, lateral;
     let menorArea
-
     base = ancho*longitud
     frontal = ancho*altura
     lateral = longitud*altura
