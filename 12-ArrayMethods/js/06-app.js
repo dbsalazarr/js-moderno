@@ -34,5 +34,4 @@ let todosmayor100 = carrito.every( item => {
 	return item.precio > 100
 })
 
-console.log(todosmayor100);
-//
+console.log(todosmayor100); // True : todos los elemento sean mayor a 100
