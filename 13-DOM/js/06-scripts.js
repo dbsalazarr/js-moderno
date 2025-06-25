@@ -35,10 +35,27 @@ document.querySelector('.contenido-hero h1').textContent = nuevoTexto;
 
 
 // También puedes cambiar una imagen...
-
 // No lo hemos visto, pero veamos por ejemplo como acceder a esa imagen...
 
 const imagen = document.querySelector('.card img');
 console.log(imagen.src);
 // Cambiar la imagen...
 imagen.src = 'img/hacer2.jpg';
+
+let footers = document.querySelector(".nav-footer")
+console.log(footers);
+console.log( footers.innerHTML )
+console.log(footers.innerText);
+console.log(footers.textContent);
+
+footers.innerText = "<p> Derechos Reservados RL </p>"
+
+let contenedorCards = document.querySelector(".contenedor-cards")
+contenedorCards.textContent = "<p> Derechos Reservados RL </p>"
+
+let imageCard = document.querySelector(".card")
+console.log(imageCard.src);
+
+if( !imageCard.src){
+    console.log("Esta etiqueta NO tiene una propiedad SRC");
+}

@@ -39,7 +39,15 @@ else { console.log("Me ejecuto debido a que el elemento seleccionado NO Existe")
 cards.forEach( card => {
     card.addEventListener("click", (e) => {
         // console.log(e.currentTarget);
-        console.log( e.currentTarget);
+        console.log( e.currentTarget.children[1].children[0].innerText, "click, presionado");
     })
 })
 
+let menus = document.querySelectorAll(".menus")
+console.log(menus);
+
+if(menus.length != 0 ){
+    console.log("EXISTE al menos una coincidencia");
+}else{
+    console.log("NO existen coincidencias")
+}
