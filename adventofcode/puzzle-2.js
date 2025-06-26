@@ -1022,7 +1022,6 @@ let pedido = totalPapelRegalo(medidas)
 console.log(pedido);
 
 function calcularSuperficie(longitud, ancho, altura){
-
     return 2*(ancho*longitud + ancho*altura + longitud*altura)
 
 }
