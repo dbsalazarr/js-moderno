@@ -80,6 +80,7 @@ console.log(pColor);
 console.log(pTipo);
 console.log(pCambios);
 
+// Para la destructuración se debe tener en cuenta el uso de llaves para la definición de los parámetros de la función
 
 function saludar({nombre, edad, direccion}){
 	return `Hola soy ${nombre} y tengo ${edad} y vivo en ${direccion}`
@@ -92,3 +93,4 @@ const user = {
 }
 
 console.log( saludar(user) )
+
