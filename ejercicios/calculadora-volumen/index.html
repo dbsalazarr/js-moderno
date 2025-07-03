@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores con JS</title>
+</head>
+<body>
+    <style>
+        body{
+            display: grid;
+            height: 100vh;
+            place-content: center;
+        }
+        #calculadora{
+            width: auto;
+        }
+    </style>
+    <form action="./" id="calculadora">
+        <h2>Volumen de una esfera</h2>
+
+        <div>
+            <label for="radio">Radio: </label><input id="radio" type="text">
+        </div>
+
+        <div>
+            <label for="volumen">Volumen: </label><input id="volumen" type="text" disabled>
+        </div>
+        <input type="submit" value="Calcular Volumen" id="btn-volumen">
+    </form>
+    <script src="./volumen.js"></script>
+</body>
+</html>
