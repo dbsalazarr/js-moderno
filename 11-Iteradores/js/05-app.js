@@ -16,7 +16,7 @@ do {
         console.log(i)
     }
     i++
-} while( i <= 20 );
+} while( i <= 1);
 
 
 // Ahora, lo que hace diferente a un while de un for o un do while, es que al menos se va a ejecutar una vez aunque la condición no se cumpla...

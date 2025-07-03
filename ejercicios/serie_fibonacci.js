@@ -7,10 +7,20 @@
 */
 
 
-let inicio = 1
-let acumulador = 1 + 0
+let terminoPrevio = 0
+let temporal = 1
+
+let sigTermino = 0
 
 // ¡Podría incluir arreglos?
-for (let i = 0; i < 7; i++){
+for (let i = 0; i < 13; i++){
 
+    if(i == 0){
+        console.log(i)
+    }else{
+        sigTermino = temporal + terminoPrevio
+        temporal = terminoPrevio
+        terminoPrevio = sigTermino
+        console.log(sigTermino);
+    }
 }
