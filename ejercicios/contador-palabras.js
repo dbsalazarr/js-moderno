@@ -7,28 +7,43 @@
  *   lo resuelvan automáticamente.
  */
 
-function cantidadPalabras( cadena ){
-    let palabras = cadena.split(" ")
-    return palabras
-}
-
 function separarPalabras( cadena ){
-    
+    cadena = cadena.toLowerCase()
     let wordList = []
     let j = 0
     for (let i = 0; i < cadena.length; i++){
         if (cadena[i] == " "){
             wordList.push( cadena.substring(j, i) )
-            j = i
+            j = i + 1
+        }
+        if( i == cadena.length - 1){
+            wordList.push( cadena.substring(j, cadena.length) )
         }
     }
-
     return wordList
 }
 
-console.log(separarPalabras("Hola tios hello"));
+// console.log(separarPalabras("hola tios hola tios"))
 
-let cadena = "Yo creo que todo lo que existe no es que simplemente la manifestación de dios todo dios que existe"
-cantidadPalabras(cadena )
+// let cadena = "Yo creo que TODO lo que existe no es mas que simplemente la manifestación de dios todo dios que existe"
+let cadena = "hello tio hola tia"
+let palabras = separarPalabras(cadena)
+console.log(palabras)
 
-console.log("buen dia".substring(0, 5));
+// Verificar la existencia de una palabra
+function existsWord( words, cadena ){
+    let exist = false
+    for(let i = 0; i < words.length; i++){
+        if (words[i] == cadena){
+            exist = true
+            break
+        } 
+    }
+    return exist
+}
+
+console.log( existsWord(palabras, "tia"));
+
+
+
+
