@@ -26,7 +26,8 @@ function separarPalabras( cadena ){
 // console.log(separarPalabras("hola tios hola tios"))
 
 // let cadena = "Yo creo que TODO lo que existe no es mas que simplemente la manifestación de dios todo dios que existe"
-let cadena = "hello tio hola tia"
+let cadena = "buenos buenos dias y dias en las noches"
+
 let palabras = separarPalabras(cadena)
 console.log(palabras)
 
@@ -42,8 +43,20 @@ function existsWord( words, cadena ){
     return exist
 }
 
-console.log( existsWord(palabras, "tia"));
+console.log( existsWord(palabras, "dias"));
 
 
+person = {
+    name : "Hola",
+    name : "Juan"
+}
+
+console.log(person.name);
+
+function cantidadPersona(  ){
+}
 
 
+function contarPalabras( phrase ){
+    let listWords = separarPalabras(phrase)
+}
