@@ -46,17 +46,29 @@ function existsWord( words, cadena ){
 console.log( existsWord(palabras, "dias"));
 
 
-person = {
-    name : "Hola",
-    name : "Juan"
+function contadorPalabra( wordList, word ){
+    let amount = 0
+    wordList.forEach( item => {
+        if ( item == word)
+            amount++
+    })
+    return amount
 }
 
-console.log(person.name);
-
-function cantidadPersona(  ){
-}
-
+console.log(contadorPalabra( palabras, "y"));
 
 function contarPalabras( phrase ){
-    let listWords = separarPalabras(phrase)
+    let listWords = separarPalabras(phrase) 
+    let palabras = []
+    let cantidadPalabras = []
+    
+    listWords.forEach( item => {
+        if( !existsWord(palabras, item) ){
+            palabras.push(item)
+            cantidadPalabras.push( [item, contadorPalabra(listWords, item)] )
+        }
+    })
+    return cantidadPalabras
 }
+console.log("Conteo palabras");
+console.log( contarPalabras(cadena) );
