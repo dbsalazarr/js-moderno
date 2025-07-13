@@ -26,7 +26,7 @@ function separarPalabras( cadena ){
 // console.log(separarPalabras("hola tios hola tios"))
 
 // let cadena = "Yo creo que TODO lo que existe no es mas que simplemente la manifestación de dios todo dios que existe"
-let cadena = "buenos buenos dias y dias en las noches"
+let cadena = "buenos buenos dias y dias en las noches conversar, salidas"
 
 let palabras = separarPalabras(cadena)
 console.log(palabras)
@@ -71,4 +71,12 @@ function contarPalabras( phrase ){
     return cantidadPalabras
 }
 console.log("Conteo palabras");
-console.log( contarPalabras(cadena) );
+let fila = contarPalabras(cadena)
+
+fila.forEach( item => {
+    console.log(item);
+})
+
+// for( let i = 0; i < fila.length; i++){
+//     console.log(fila[i][0])
+// }
